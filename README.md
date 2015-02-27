@@ -1,22 +1,21 @@
 # Reddit.js
-Reddit.js is a browser based wrapper on most of the read-only [Reddit API](http://www.reddit.com/dev/api/oauth#scope_read).
-It makes [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing) requests to the
-[Reddit API](http://www.reddit.com/r/changelog/comments/1r0u3v/reddit_change_third_party_websites_can_now_make/).
-Thus only unauthenicated (logged-out) requests are allowed.
-Latest versions of Internet Explorer, Chrome, FireFox are tested via automated tests running on
-[Testling](https://ci.testling.com/sahilm/reddit.js). Sadly IE 8 & 9 are not supported. Hope you find Reddit.js useful!
+Reddit.js is a wrapper on most of the read-only [Reddit API](http://www.reddit.com/dev/api/oauth#scope_read).
 
-[![browser support](https://ci.testling.com/sahilm/reddit.js.png)
-](https://ci.testling.com/sahilm/reddit.js)
+Thus only unauthenicated (logged-out) requests are allowed.
+
+# Installation
+
+Reddit.js is a lightweight library which comes with minified source. Include the minified source with a script tag.
+```javascript
+  npm install redditjs --save
+```
 
 # Usage
 
-Reddit.js is a lightweight dependency-free library which comes with minified source. Include the minified source with a script tag.
-```html
-  <script src="reddit.min.js"></script>
+```javascript
+  var reddit = require('./reddit.js');
 ```
 
-The `reddit` variable is exported which can be used to talk to the Reddit API. The `examples` directory includes usage with pure DOM API. More sophisticated examples are on the way!
 
 ```javascript
   // Fetch the 5 hottest posts on /r/awww
@@ -216,7 +215,7 @@ To build the minified source
 
 The MIT License (MIT)
 
-Copyright (c) 2014 Sahil Muthoo
+Copyright (c)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

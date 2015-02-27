@@ -1,43 +1,29 @@
 {
-  "name": "reddit.js",
-  "version": "0.1.0",
-  "description": "Reddit API wrapper for the browser",
+  "name": "redditjs",
+  "version": "1.0.0",
+  "description": "Reddit API wrapper for node",
   "main": "reddit.js",
-  "author": "Sahil Muthoo <sahil.muthoo@gmail.com> (http://www.sahilm.com)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/litechip/reddit.js.git"
+  },
+  "keywords": [
+    "reddit",
+    "api",
+    "node"
+  ],
+  "author": "Alex Porcescu <alex.litechip@gmail.com>",
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://raw.github.com/sahilm/reddit.js/master/LICENSE"
+      "url": "https://raw.githubusercontent.com/litechip/reddit.js/master/LICENSE"
     }
   ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/sahilm/reddit.js.git"
+  "bugs": {
+    "url": "https://github.com/litechip/reddit.js/issues"
   },
-  "devDependencies": {
-    "mocha": "1.18.2",
-    "chai": "1.9.1",
-    "testling": "1.6.1",
-    "uglify-js": "2.4.13",
-    "jshint": "2.5.0",
-    "phantomjs": "*"
-  },
-  "testling": {
-    "harness": "mocha-bdd",
-    "scripts": [
-      "spec/util/sinon.js",
-      "spec/util/sinon-ie.js",
-      "reddit.min.js"
-    ],
-    "files": "spec/*.js",
-    "browsers": [
-      "ie/latest",
-      "chrome/latest",
-      "firefox/latest"
-    ]
-  },
-  "scripts": {
-    "test": "jshint reddit.js spec/*.js && testling",
-    "minify": "uglifyjs reddit.js --compress --lint --screw-ie8 --comments --output reddit.min.js"
-  }
+  "homepage": "https://github.com/litechip/reddit.js"
 }
